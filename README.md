@@ -67,6 +67,12 @@ By default it writes shards to a subdirectory called `FineWeb-edu`.
 
 This repository adds Notebooks that capture Andrej's workflow in various stages of completion. As Andrej rewrites and rearranges the GPT-2 code multiple times these Notebooks should be beneficial to anyone following along with the tutorial. The Notebooks also contain extensive documentation and notes. It is worth noting that Andrej was careful to git commit his work at various stages of completion providing another way to monitor how the GPT was put together.
 
+#### No support for parallel GPUs in Notebooks
+
+These Notebooks were designed to run on a single GPU so all of the code Andrej wrote to support training on multiple GPUs is not included in the Notebooks in this repository. However the Distributed Data Parallel (DDP) code can still be found in his original `train_gpt2.py` script that is reproduced in this repository. Look for the lines beginning `Set up DDP` and any code that handles the `RANK` or `LOCAL_RANK` variables.
+
+As far as I recall, support for parallel GPUs is the only major function Andrej developed in his tutorial that I did not include in these Notebooks. This omission doesn't affect results but training takes longer when running on one GPU compared to several in parallel.
+
 #### Working Through the Tutorial Line-by-Line
 
 While you could just look through Andrej's finished script to learn about the transformer architecture used in GPT-2, I can't express enough how informative it is to work through the build from scratch line-by-line as you follow along with the tutorial. You will come away with a deep understanding of some very important and complex Deep Learning subjects.
