@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "Reproducing GPT-2 (124M) in Notebooks — Karpathy Tutorial Companion"
+authors:
+  - family-names: Hughes
+    given-names: John
+version: "v1.0.0"
+date-released: "2025-08-29"
+url: "https://github.com/DrJohnHughes/Reproducing-GPT2-from-Scratch"
+message: "If you use these notebooks, please cite this repository."

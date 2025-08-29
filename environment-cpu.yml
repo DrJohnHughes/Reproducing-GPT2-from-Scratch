@@ -1,0 +1,24 @@
+name: gpt2-repro-cpu
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.11
+  - jupyterlab
+  - ipykernel
+  - numpy
+  - matplotlib
+  - tqdm
+  - requests
+  - regex
+  - pytorch=2.5
+  - torchvision
+  - torchaudio
+  - pip
+  - pip:
+      - transformers>=4.44.0
+      - accelerate>=0.33.0
+      - datasets>=2.20.0
+      - tiktoken>=0.7.0
+      - pyarrow>=15
+      - ninja
